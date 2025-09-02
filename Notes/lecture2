@@ -1,1 +1,45 @@
+<h1>
+  heading is not just to set size but also use to set priority. Always remember
+  sequence of heading should follow and priority too fo SEO
+</h1>
+<h2>heading is not just to set size but also use to set priority</h2>
+<h3>heading is not just to set size but also use to set priority</h3>
+<h4>heading is not just to set size but also use to set priority</h4>
+<h5>heading is not just to set size but also use to set priority</h5>
+<h6>heading is not just to set size but also use to set priority</h6>
+
+<p>
+  P tag is use for displaying simple contain. lorem+number and enter it, you
+  will get built-in paragraph
+</p>
+
+<p>hr tag is use for horizontal line as shown below</p>
+<hr />
+<p><mark>shortcut->ul>li*5 or ol>li*5</mark></p>
+<ul>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+  <li>d</li>
+  <li>e</li>
+</ul>
+<ol>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+  <li>d</li>
+  <li>e</li>
+</ol>
+
+<p>anchor tag, target="blank" is use to display other link in new tab</p>
+<a href="coderArmy.in" target="blank">Coder Army website link </a>
+
+<p>adding images</p>
+<img src="" alt="image alt text without url" />
+<img
+  src="https://codedamn.com/assets/images/learnpaths/og/frontend.png"
+  width="200px"
+  height="200px"
+  alt="image alt text with url"
+/>
 
