@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 300px;
+  width: 700px;
+  background-color: rgb(185, 177, 177);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.box {
+  background-color: rgb(177, 177, 240);
+}
+
+.a {
+  display: grid;
+  gap: 10px;
+  grid-column: 1;
+  grid-row: 1/4;
+  grid-template-rows: 1fr 1fr;
+}
+
+.b {
+  display: grid;
+  gap: 10px;
+  grid-row: 1;
+  grid-column: 2/5;
+  grid-template-columns: 1fr 1fr;
+}
+
+.First {
+  background-color: red;
+}
+
+.Second {
+  background-color: rgb(139, 222, 222);
+}
+
+.Third {
+  background-color: rgb(197, 144, 75);
+}
+
+.Fourth {
+  background-color: rgb(197, 144, 75);
+}
+
+.Fifth {
+  background-color: white;
+}
+
+.c {
+  display: grid;
+  gap: 10px;
+  grid-column: 2/4;
+  grid-row: 2 / 4;
+}
+.c1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+.c2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.Six {
+  background-color: red;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 4;
+}
+
+.Seven {
+  background-color: white;
+}
+
+.Eight {
+  background-color: red;
+}
+
+.Nine {
+  background-color: rgb(139, 222, 222);
+}
