@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture2-HTML-introduction</title>
+  </head>
+  <body>
+    <header>
+      <a href="./HomePage.html" target="_blank">Home</a>
+      <a href="./HTML-intro.html" target="_blank">HTML</a>
+      <a href="./AboutUs.html" target="_blank">About us</a>
+
+      <hr />
+
+      <ul>
+        <li>
+          <a href="./HTML-intro.html" target="_blank">HTML Introduction</a>
+        </li>
+        <li>
+          <a href="./Lecture3-nested-table.html" target="_blank"
+            >Nested & Table
+          </a>
+        </li>
+        <li>
+          <a
+            href="./lecture4-fileepath-boilerplate-div-id-class.html"
+            target="_blank"
+            >Filepath, Boilerplate, Div, Id, Class</a
+          >
+        </li>
+        <li>
+          <a href="./lecture5-forms.html" target="_blank">Forms in HTML</a>
+        </li>
+        <li>
+          <a href="./lecture6-media-multipage-deploy.html" target="_blank"
+            >media, Multipage website, Deploy</a
+          >
+        </li>
+      </ul>
+      <hr />
+    </header>
+
+    <main>
+      <h1>HTML : Hyper Text Markup Language</h1>
+      <p>
+        HTML is a standard language for developing and creating interactive
+        websites, introduced by Tim Berners Lee. HTML documents are created in
+        any text editor for and can be run(executed) on any computer that has a
+        web browser. HTML is compatible with most of the web browsers.
+      </p>
+      <p>
+        HTML describes the structure of a Web page HTML consists of a series of
+        elements.HTML elements tell the browser how to display the content HTML
+        elements label pieces of content such as "this is a heading", "this is a
+        paragraph", "this is a link", etc.
+      </p>
+      <h2>Heading &lt;h1&gt; to &lt;h6&gt;</h2>
+      <p>
+        Defintion: Headings are tags used to define titles and subtitles on your
+        page. They are crucial for creating a logical hierarchy and outline for
+        your content.
+      </p>
+      <h3>Points to be remember:</h3>
+      <ul>
+        <li>
+          Heading is not just to set size but also use to set priority. Always
+          remember sequence of heading should follow and priority too for SEO
+        </li>
+        <li>
+          h1 tag is the most important heading, typically used only once per
+          page for the main title.
+        </li>
+        <li>h2 tag is a major section heading.</li>
+        <li>h3 tag is a sub-section heading under an h2 tag</li>
+        <li>...and so on, down to h6, the least important heading.</li>
+      </ul>
+
+      <h3>Example:</h3>
+      <img
+        src=".//images/Heading.avif"
+        height="200px"
+        width="400px"
+        alt="image of code with output"
+      />
+      <hr />
+
+      <h2>Paragraph Tag</h2>
+      <p>Definition: &lt;p&gt; tag is use for displaying simple contain.</p>
+      <h3>Points to be remember:</h3>
+      <ul>
+        <li>lorem+number and enter it, you will get built-in paragraph</li>
+        <li>
+          To define a distinct paragraph of text. Browsers automatically add a
+          little bit of space before and after a &lt;p&gt; element, separating
+          it from other content. You should not use multiple line breaks; you
+          should use multiple &lt;p&gt; tag
+        </li>
+      </ul>
+
+      <h3>Example:</h3>
+      <img
+        src="./images/paragraph.png"
+        height="250px"
+        width="900px"
+        alt="image of code with output"
+      />
+      <hr />
+      <h2>Horizontal Line</h2>
+
+      <p>
+        Definition: The &lt;hr&gt; tag is use to draw a horizontal line in the
+        website
+      </p>
+
+      <h3>Example:</h3>
+      <img
+        src="./images/hr_tag.png"
+        height="250px"
+        width="1000px"
+        alt="image of code with output"
+      />
+      <hr />
+
+      <h2>The Line Break Tag: (br)</h2>
+      <p>
+        Definitin: This tag tells the browser, "Stop writing on this line and
+        immediately start on the next one." It's like hitting the Enter key once
+        in a poem or an address.
+      </p>
+      <h3>Example:</h3>
+      <img
+        src="./images/br_tag.png"
+        height="200px"
+        width="700px"
+        alt="image of code with output"
+      />
+      <hr />
+
+      <h2>List Elements</h2>
+      <p>
+        Definition: HTML lists allow web developers to group a set of related
+        items in lists.
+      </p>
+      <p>Shortcut: ul>li*5 or ol>li*5</p>
+      <h3>Types of lists:</h3>
+      <ol>
+        <li>
+          <strong>Unordered List:</strong> An Unordered List. It creates a
+          bulleted list.
+        </li>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Value</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Type</td>
+              <td>
+                <ul>
+                  <li>disc</li>
+                  <li>circle</li>
+                  <li>square</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Sets the list item marker to a bullet (default)</li>
+                  <li>Sets the list item marker to a circle</li>
+                  <li>Sets the list item marker to a square</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <li>
+          <strong>Ordered List:</strong> An Ordered List. It creates a numbered
+          list.
+        </li>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Value</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Type</td>
+              <td>"1" /"a"/"I"/"i"</td>
+              <td>
+                1 is default value and other values specify the numbering type
+                for the used items.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Reversed</td>
+              <td>Reversed</td>
+              <td>
+                This attribute specifies that the items of the list are
+                specified in the reverse order.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Start</td>
+              <td>Number</td>
+              <td>
+                Specifies the starting number of the first item in an ordered
+                list.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <li>
+          <strong> Desription List:</strong> A List Item. Each item in either
+          type of list must be wrapped in an &lt;li&gt; tag.
+        </li>
+      </ol>
+
+      <h3>Example:</h3>
+      <img
+        src="./images/Listing_Tag.png"
+        height="200px"
+        width="700px"
+        alt="image of code with output"
+      />
+      <hr />
+
+      <h2>The Anchor Tag</h2>
+      <p>
+        Definition: The Anchor tag is what makes the web "hypertext." It is used
+        to create a hyperlink to another webpage, a file, or a location within
+        the same page.
+      </p>
+      <p>
+        The anchor tag starts from &lt;a&gt;...&lt;/a&gt;, target="blank" is use
+        to display other link in new tab
+      </p>
+
+      <h3>Points to be remember:</h3>
+      <ul>
+        <li>To make text (or an image) clickable.</li>
+        <li>
+          It requires an attribute called href (hypertext reference) to specify
+          the destination URL.
+        </li>
+        <li>
+          The target Attribute: <br />By default, the linked page will be
+          displayed in the current browser window. To change this, you must
+          specify another target for the link.
+        </li>
+        <ol>
+          <li>
+            _self - Default. Opens the document in the same window/tab as it was
+            clicked
+          </li>
+          <li>_blank - Opens the document in a new window or tab</li>
+        </ol>
+      </ul>
+
+      <h3>Example:</h3>
+      <img
+        src="./images/a_tag.png"
+        height="100px"
+        width="700px"
+        alt="image of code with output"
+      />
+      <hr />
+
+      <h2>The Image Tag</h2>
+      <p>Definition: To display an image on a webpage.</p>
+      <p>Image Attribute:</p>
+      <ul>
+        <li>
+          src : It is used to specify the path of an image file. The popular
+          extensions of image file are png, jpg and gif.
+        </li>
+        <li>height : Specifies height of the image in pixels.</li>
+        <li>width : Specifies width of the image in pixels.</li>
+        <li>
+          alt : It is referred as alternate text. It specifies the description
+          of the image.
+        </li>
+      </ul>
+
+      <h3>Example 1 (Image present in the same folder):</h3>
+      <img
+        src="./images/Img_tag1.webp"
+        height="300px"
+        width="700px"
+        alt="image of code with output"
+      />
+      <h3>Example 2:</h3>
+      <img
+        src="./images/Img_tag2.png"
+        height="200px"
+        width="700px"
+        alt="image of code with output"
+      /><br />
+      <h2>Youtube Tutorial:</h2>
+      <iframe
+        src="https://youtube.com/embed/GkZN_-HMCJ8?si=61wtq1DZ-i8mIF1"
+        allowfullscreen
+      ></iframe>
+      <hr />
+      <hr />
+    </main>
+    <footer>
+      <h2>Follow me on:</h2>
+
+      <a
+        href="https://www.linkedin.com/in/akansha-vishwakarma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+      "
+        target="_blank"
+      >
+        LinkedIn</a
+      >
+      <a
+        href="https://x.com/Akanshav_1?t=DR8k-oXCiMwh68Vl88tuyA&s=09 "
+        target="_blank"
+        >Twitter</a
+      >
+      <a href="https://github.com/Akanshavishwakarma" target="_blank">GitHub</a
+      ><br />
+      <p>Copyright &copy; All rights are reserved</p>
+    </footer>
+  </body>
+</html>
