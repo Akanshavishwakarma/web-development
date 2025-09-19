@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lecture6-media-multipage-deploy</title>
+  </head>
+  <body>
+    <header>
+      <a href="./HomePage.html" target="_blank">Home</a>
+      <a href="./HTML-intro.html" target="_blank">HTML</a>
+      <a href="./AboutUs.html" target="_blank">About us</a>
+      <hr />
+      <ul>
+        <li>
+          <a href="./HTML-intro.html" target="_blank">HTML Introduction</a>
+        </li>
+        <li>
+          <a href="./Lecture3-nested-table.html" target="_blank"
+            >Nested & Table
+          </a>
+        </li>
+        <li>
+          <a
+            href="./lecture4-fileepath-boilerplate-div-id-class.html"
+            target="_blank"
+            >Filepath, Boilerplate, Div, Id, Class</a
+          >
+        </li>
+        <li>
+          <a href="./lecture5-forms.html" target="_blank">Forms in HTML</a>
+        </li>
+        <li>
+          <a href="./lecture6-media-multipage-deploy.html" target="_blank"
+            >media, Multipage website, Deploy</a
+          >
+        </li>
+      </ul>
+      <hr />
+    </header>
+
+    <main>
+      <h1>Media</h1>
+      <h2>Problem:</h2>
+      <p>
+        The fundamental truth is that a webpage should be able to deliver any
+        kind of content, not just static text and pictures. For years, this was
+        a major problem. To play a video or audio file, browsers had to rely on
+        third-party plugins like Adobe Flash, QuickTime, or Silverlight. This
+        was inefficient, insecure, and inconsistent across different computers.
+      </p>
+
+      <h2>Solutions:</h2>
+      <h3>
+        <ol>
+          <li>Video File</li>
+          <li>Audio File</li>
+        </ol>
+      </h3>
+
+      <h2>Video File</h2>
+      <ul>
+        <li>Add video in your website using video tag.</li>
+        <img src="./video/video_tag.png" width="300px" alt="video" />
+
+        <li>
+          <h3>The Problem We Immediately Face:</h3>
+          If you put this on a page, you'll just see the first frame of the
+          video as a static image. You can't play it, pause it, or change the
+          volume. It's not a video player; it's just a video frame.The Problem
+          We Immediately Face: If you put this on a page, you'll just see the
+          first frame of the video as a static image. You can't play it, pause
+          it, or change the volume. It's not a video player; it's just a video
+          frame.
+        </li>
+        <li>
+          <h3>The Solution:</h3>
+          We need to add player controls. The browser has a beautiful set of
+          default controls built-in, and we can turn them on with a simple
+          attribute.
+        </li>
+      </ul>
+      <h3>The control attribute magic:</h3>
+      <p>
+        The controls attribute is a boolean attribute. You don't need to set it
+        to a value (controls="true" is unnecessary); its mere presence turns the
+        feature on.
+      </p>
+
+      <img
+        src="./video/video & control.png"
+        height="200px"
+        width="700px"
+        alt="video with control"
+      />
+
+      <h3>Attributes of video tag:</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>src</td>
+            <td>url</td>
+            <td>Specifies the URL of the video file</td>
+          </tr>
+
+          <tr>
+            <td>controls</td>
+            <td>not required</td>
+            <td>
+              The video controls should be displayed (i.e. play/pause button
+              etc.)
+            </td>
+          </tr>
+
+          <tr>
+            <td>loop</td>
+            <td>not required</td>
+            <td>The video will start over again, every time it is finished</td>
+          </tr>
+
+          <tr>
+            <td>autoplay</td>
+            <td>not required</td>
+
+            <td>The video will start playing as soon as it is ready</td>
+          </tr>
+
+          <tr>
+            <td>muted</td>
+            <td>not required</td>
+
+            <td>This Specifies that the video output should be muted</td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>pixels</td>
+            <td>Sets the height of the video player</td>
+          </tr>
+
+          <tr>
+            <td>width</td>
+            <td>pixels</td>
+            <td>Sets the width of the video player</td>
+          </tr>
+
+          <tr>
+            <td>preload</td>
+            <td>
+              <ol>
+                <li>auto</li>
+                <li>metadeta</li>
+                <li>none</li>
+              </ol>
+            </td>
+            <td>
+              Specifies if and how the author thinks the video should be loaded
+              when the webpage loads
+            </td>
+          </tr>
+
+          <tr>
+            <td>poster</td>
+            <td>url</td>
+            <td>
+              Specifies an image to be shown while the video is downloading, or
+              until the user hits the play button
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>The iframe Tag</h2>
+      <p>Embed the youtube videos using iframe in 2 ways.</p>
+      <ol>
+        <li>
+          Copy link from the address bar of search engine then modify the link
+          as shown below:
+        </li>
+
+        <img
+          src="./video/B_Link modified.png"
+          height="150px"
+          width="700px"
+          alt="explanation"
+        />
+        <li>
+          Copy link from the youtube video then modify the link as shown below:
+        </li>
+        <img
+          src="./video/B_Link modified2.png"
+          height="150px"
+          width="700px"
+          alt="explanation"
+        />
+
+        <h3>Problem:</h3>
+        <p>
+          If user wants to watch in the full screen. He will be not able to do
+          that
+        </p>
+        <h3>Solution:</h3>
+        <p>Use "allowfullscreen" attribute in iframe</p>
+
+        <h3>Example:</h3>
+        <img
+          src="./video/iframe_tag.png"
+          height="150px"
+          width="700px"
+          alt="iframe tag"
+        />
+        <h3>Example of iframe using table</h3>
+        <h4>Code:</h4>
+        <img
+          src="./video/iframe & table code.png"
+          height="200px"
+          width="680px"
+          alt="iframe & table code"
+        />
+        <h4>Output:</h4>
+        <img
+          src="./video/iframe & table op.png"
+          height="200px"
+          width="700px"
+          alt="iframe & table op"
+        />
+      </ol>
+
+      <h2>Audio File</h2>
+      <ul>
+        <li>Add audio in your website using audio tag.</li>
+        <li>
+          The good news is that the audio tag works almost identically to the
+          video tag, just without the visual component.
+        </li>
+      </ul>
+
+      <h3>Attributes of audio tag:</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>src</td>
+            <td>url</td>
+            <td>Specifies the URL of the audio file</td>
+          </tr>
+
+          <tr>
+            <td>controls</td>
+            <td>not required</td>
+            <td>
+              The audio controls should be displayed (i.e. play/pause button
+              etc.)
+            </td>
+          </tr>
+
+          <tr>
+            <td>loop</td>
+            <td>not required</td>
+            <td>The audio will start over again, every time it is finished</td>
+          </tr>
+
+          <tr>
+            <td>autoplay</td>
+            <td>not required</td>
+
+            <td>The audio will start playing as soon as it is ready</td>
+          </tr>
+
+          <tr>
+            <td>muted</td>
+            <td>not required</td>
+
+            <td>This Specifies that the audio output should be muted</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Example:</h3>
+      <img
+        src="./Audio/Audio&Controls.png"
+        height="150px"
+        width="500px"
+        alt="image of code with output"
+      />
+
+      <h2>Problem: Not all browsers support the same video/audio formats.</h2>
+      <p>
+        Chrome might prefer the modern .webm format, while Safari on an iPhone
+        might only support .mp4. If you only provide one src, some of your users
+        won't be able to see your video.
+      </p>
+
+      <h2>Solution: source tag</h2>
+      <p>
+        The source tag is used to specify multiple media resources for video as
+        well as audio media elements.
+      </p>
+      <h3>Example:</h3>
+      <img
+        src="./source tag media/source_video & audio.png"
+        height="250px"
+        width="700"
+        alt="source_video & audio"
+      />
+
+      <h2>Different file formats for audio & video used in source tag</h2>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Different Formats</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Audio</td>
+            <td>.mp3</td>
+            <td>
+              An audio format from MPEG(Moving / Motion Pictures Experts Group).
+            </td>
+          </tr>
+          <tr>
+            <td>.aac</td>
+            <td>
+              Advanced Audio Coding, standard format on Iphone, youtube etc
+            </td>
+          </tr>
+          <tr>
+            <td>.ogg</td>
+            <td>ogg : An Open container and free audio format.</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Video</td>
+            <td>.mp4 (H.264 codec)</td>
+            <td>
+              This is the most widely supported format today. Almost all modern
+              browsers can play it.
+            </td>
+          </tr>
+          <tr>
+            <td>.webm (VP8/VP9 codec)</td>
+            <td>
+              This is an open-source format heavily promoted by Google. It has
+              excellent support in Chrome and Firefox.
+            </td>
+          </tr>
+          <tr>
+            <td>.ogg(Theora codec)</td>
+            <td>
+              This was an older open-source alternative, more popular
+              before .webm took over.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Problem: Your video is not accessible.</h2>
+      <p>
+        Users who are deaf or hard of hearing can't understand your video. Users
+        in a noisy environment (or a quiet office) can't listen to the audio.
+        Users speaking another language won't understand it.
+      </p>
+
+      <h3>Solution: The track element</h3>
+      <p>
+        The track element allows you to add timed text tracks, such as subtitles
+        or captions. It's a self-closing tag that points to a special text file,
+        usually in WebVTT (.vtt) format.
+      </p>
+      <h3>Example:</h3>
+      <img
+        src="./video/video with subtitle.png"
+        height="250px"
+        width="700px"
+        alt="video with subtitle"
+      />
+
+      <hr />
+
+      <h2>Create Multi-media page</h2>
+      <p>Create multiple .html file and link that, using anchor tag</p>
+      <p>
+        Use header section, main section, footer section for creating each page
+      </p>
+      <p>(header):Mostly use as navigation bar. Title of the page.</p>
+      <p>(main): Mostly used to add content in the website.</p>
+      <p>
+        (footer):Mostly use to give extra informationa and copyright message.
+      </p>
+
+      <h3>Example:</h3>
+      <img
+        src="./images/multi-media_page.png"
+        height="250px"
+        width="700px"
+        alt="multi-media_page"
+      />
+      <hr />
+      <h2>How to add Copyright</h2>
+      <p>
+        The Two Ways to Create the Copyright Symbol. You can use either the
+        entity name or the entity number. Both produce the exact same result.
+        The entity name is generally easier to remember.
+      </p>
+      <ol>
+        <li>
+          <h3>Using the Entity Name (Recommended):</h3>
+          <p>This is the most common and readable method.</p>
+        </li>
+        <li>
+          <h3>Using the Entity Number</h3>
+          <p>
+            This method uses the character's numerical code. It works just as
+            well but is less descriptive.
+          </p>
+        </li>
+        <h3>Example:</h3>
+        <img
+          src="./images/copyright_tag.png"
+          height="100px"
+          width="700px"
+          alt="copyright_tag"
+        />
+        <img
+          src="./images/copyright_tag2.png"
+          height="350px"
+          width="700px"
+          alt="copyright_tag"
+        />
+      </ol>
+
+      <hr />
+      <h2>How to Deploy website:</h2>
+      <p>We can deploy our website using netlify. It is the free tool.</p>
+      <p>Netlify gives automatically security i.e. https.</p>
+
+      <h3>Steps:</h3>
+      <ol>
+        <li>Create account on netlify.</li>
+        <li>Click "Try Netlify Drop or Choose a template"</li>
+        <li>
+          Now you will get acess to your local file manager. Select the folder
+          in which you have all the files and then click "upload".
+        </li>
+        <li>After uploading, click "Quick Setup".</li>
+        <li>Give name to your project and cick to "Update project name".</li>
+        <li>Click "Finish later".</li>
+        <li>You will get link.</li>
+      </ol>
+      <br />
+      <h2>Youtube Tutorial:</h2>
+      <iframe
+        src="https://www.youtube.com/embed/NGYp1zCBthk"
+        allowfullscreen
+      ></iframe>
+
+      <hr />
+      <hr />
+    </main>
+
+    <footer>
+      <h2>Follow me on:</h2>
+
+      <a
+        href="https://www.linkedin.com/in/akansha-vishwakarma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+      "
+        target="_blank"
+      >
+        LinkedIn</a
+      >
+      <a
+        href="https://x.com/Akanshav_1?t=DR8k-oXCiMwh68Vl88tuyA&s=09 "
+        target="_blank"
+        >Twitter</a
+      >
+      <a href="https://github.com/Akanshavishwakarma" target="_blank">GitHub</a
+      ><br />
+      <p>Copyright &copy; All rights are reserved</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lecture4-fileepath-boilerplate-div-id-class</title>
+  </head>
+  <body>
+    <header>
+      <a href="./HomePage.html" target="_blank">Home</a>
+      <a href="./HTML-intro.html" target="_blank">HTML</a>
+      <a href="./AboutUs.html" target="_blank">About us</a>
+      <hr />
+      <ul>
+        <li>
+          <a href="./HTML-intro.html" target="_blank">HTML Introduction</a>
+        </li>
+        <li>
+          <a href="./Lecture3-nested-table.html" target="_blank"
+            >Nested & Table
+          </a>
+        </li>
+        <li>
+          <a
+            href="./lecture4-fileepath-boilerplate-div-id-class.html"
+            target="_blank"
+            >Filepath, Boilerplate, Div, Id, Class</a
+          >
+        </li>
+        <li>
+          <a href="./lecture5-forms.html" target="_blank">Forms in HTML</a>
+        </li>
+        <li>
+          <a href="./lecture6-media-multipage-deploy.html" target="_blank"
+            >media, Multipage website, Deploy</a
+          >
+        </li>
+      </ul>
+      <hr />
+    </header>
+
+    <main>
+      <h1>File Path| Boiler Plate| Div| id & class</h1>
+
+      <h2>File path: Relative vs Absolute</h2>
+      <h3>File path:</h3>
+      <p>Inform the browser where is the file.</p>
+      <h3>Relative path (current path):</h3>
+      <p>
+        Path from the current file, used to navigate within root/super files or
+        sub-files.
+      </p>
+      <h4>Example:</h4>
+      <img
+        src="./images/relative_path.png"
+        height="200px"
+        width="400px"
+        alt="relative_path"
+      />
+      <h4>Acessing file with differents cases using above example:</h4>
+      <table border="1">
+        <tr>
+          <th>Case 1</th>
+          <td>If we are in the same folder and image in that folder.</td>
+          <td>
+            <img
+              src="./images/relative_path1.png"
+              height="100px"
+              width="150px"
+              alt="case 1 "
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Case 2</th>
+          <td>When img is present in another sub-folder.</td>
+          <td>
+            <img
+              src="./images/relative_path2.png"
+              height="100px"
+              width="150px"
+              alt="case 2"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Case 3</th>
+          <td>When img is present about the folder (super/parent folder).</td>
+          <td>
+            <img
+              src="./images/relative_path3.png"
+              height="100px"
+              width="150px"
+              alt="case 3"
+            />
+          </td>
+        </tr>
+      </table>
+      <h3>Absolute path (The Original Path):</h3>
+      <p>
+        An absolute file path gives the full, complete URL to a resource on the
+        web. It starts with http:// or https://.
+      </p>
+      <p>
+        You ONLY use absolute paths when you are linking to a resource that is
+        NOT on your own website.
+      </p>
+      <h4>When to use?</h4>
+
+      <ul>
+        <li>Linking to another website.</li>
+        <li>Using a font from Google Fonts.</li>
+        <li>Using an image from an image-hosting service.</li>
+      </ul>
+      <h3>Why Relative Path is better than Absolute Path?</h3>
+      <ol>
+        <li>Browsers do not support absolute paths due to security reasons.</li>
+        <li>
+          In Case 1 of absolute path, the external image may be removed anytime.
+        </li>
+        <li>
+          In Case 2 of absolute path, absolute paths require system access,
+          which may expose sensitive data.
+        </li>
+        <li>
+          Browsers also restrict relative paths if they attempt to directly
+          access the system.
+        </li>
+      </ol>
+      <h3>How relative works explained using two cases:</h3>
+
+      <ul>
+        <li>Case 1 - Adding the direct file path from Google.</li>
+        <img
+          src="./images/absolute_path1.png"
+          height="200px"
+          width="700px"
+          alt="absolute_path1"
+        />
+        <br /><br />
+        <li>
+          Case 2 - Using an image from the system but not in the same folder as
+          the code file, so the system fetches it (starts from the root
+          directory).
+          <ol>
+            <br />
+            <li>
+              In windows: The Windows file system is organized into separate
+              drives, each identified by a letter (like C:, D:, etc.).
+            </li>
+            <br />
+            <li>
+              In mac: The macOS file system (like Linux and other Unix-like
+              systems) does not use drive letters. Instead, it has a single,
+              unified file system.
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Features</th>
+
+            <th>Windows</th>
+            <th>macOS (and Linux)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Starting Point</th>
+            <td>always starts with a drive letter</td>
+
+            <td> always starts with a single forward slash /.</td>
+          </tr>
+          <tr>
+            <th>Directory Root</th>
+
+            <td>always starts with a single forward slash /</td>
+            <td>forward slash / to separate directories and files</td>
+          </tr>
+
+          <tr>
+            <th>Structure</th>
+            <td>Drive:\Folder\SubFolder\file.txt</td>
+            <td>/Folder/SubFolder/file.txt</td>
+          </tr>
+          <tr>
+            <th>Example</th>
+            <td>C:\Users\JohnDoe\Documents\report.docx</td>
+            <td>/Users/johndoe/Documents/report.docx</td>
+          </tr>
+          <tr>
+            <th>Breakdown of example</th>
+            <td>
+              <ul>
+                <li>C:\ - Start at the root of the C drive.</li>
+                <li>Users - Go into the "Users" folder.</li>
+                <li>JohnDoe - Go into the "JohnDoe" folder.- Documents</li>
+                <li>Go into the "Documents" folder.- report.docx</li>
+                <li>Here is the file.</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Start at the absolute root of the entire file system.</li>
+                <li>Users - Go into the "Users" directory.</li>
+                <li>
+                  johndoe - Go into the "johndoe" directory (usernames are
+                  typically lowercase on macOS/Linux).
+                </li>
+                <li>Documents - Go into the "Documents" directory.</li>
+                <li>report.docx - Here is the file.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>
+        Note: We can access only those image whih are present in the folder.
+      </h4>
+
+      <hr />
+      <h2>Boiler Plate (Basic structure of Html)</h2>
+
+      <h3>The Logical Solution - The Boilerplate</h3>
+
+      <ul>
+        <li>
+          The solution is to create a standard, universal starting template—a
+          boilerplate.
+        </li>
+        <li>
+          This is a block of code that you will start every single HTML file
+          with.
+        </li>
+        <li>
+          It's not something you need to reinvent each time; you just copy-paste
+          it and fill in the blanks.
+        </li>
+        <li>
+          It's the "blueprint of the house" that you need before you can start
+          putting in the walls (&lt;h1&gt;) and windows (&lt;img&gt;).
+        </li>
+      </ul>
+
+      <h3>Breakdown of Boiler Plate:</h3>
+      <img
+        src="./images/Boiler_plate.png"
+        height="300px"
+        eidth="300px"
+        alt="Boiler_plate"
+      />
+      <ul>
+        <li>
+          &lt;!DOCTYPE html&gt;: It shows that the file use HTML5 version.
+        </li>
+        <li>
+          &lt;html&gt;... &lt;/html&gt;:
+          <ul>
+            <li>This is the root element that wraps your entire page.</li>
+            <li>
+              lang="en": The lang="en" attribute declares that the primary
+              language of the page content is English. This is very important
+              for accessibility and SEO. You'd change "en" to "es" for Spanish,
+              "hi" for Hindi, etc.
+            </li>
+          </ul>
+        </li>
+        <li>
+          &lt;head&gt;... &lt;/head&gt;:
+          <ul>
+            <li>
+              This page is divided into two sections internally, head section
+              and body section.
+            </li>
+            <li>
+              Head section contains title of the document which is enclosed
+              within &lt;title&gt; and &lt;/title&gt; of &lt;head&gt; and
+              &lt;/head&gt;.
+            </li>
+          </ul>
+        </li>
+        <li>
+          &lt;meta charset="UTF-8"&gt;:
+          <ul>
+            <li>
+              Computers fundamentally only understand numbers. To display text,
+              they use a "character set" to map numbers to letters. There are
+              many different character sets, and if the browser uses the wrong
+              one, your text will be garbled.
+            </li>
+            <li>
+              This meta tag explicitly tells the browser to use UTF-8, which is
+              the universal standard character set for the web. It can represent
+              almost any character and symbol from any language in the world.
+              This line is essential to prevent text-encoding issues.
+            </li>
+          </ul>
+        </li>
+        <li>
+          &lt;meta name="viewport"&gt;:
+          <ul>
+            <li>
+              The Problem: A website can be viewed on a tiny phone screen or a
+              giant desktop monitor. If you don't tell a mobile browser how to
+              handle your page, it will try to render it as if it were on a
+              desktop—resulting in a tiny, zoomed-out, unreadable page.
+            </li>
+            <li>
+              The Solution: This specific meta tag is the cornerstone of
+              responsive design
+              <ul>
+                <li>
+                  - width=device-width: This tells the browser: "Make the page's
+                  width equal to the screen width of the device it's being
+                  viewed on."
+                </li>
+                <li>
+                  initial-scale=1.0: This sets the initial zoom level to 100%
+                  when the page is first loaded.
+                </li>
+                <li>
+                  In simple terms: this line tells the browser to render the
+                  page in a way that is optimized for mobile screens.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          &lt;title&gt;... &lt;/title&gt;
+          <ul>
+            <li>
+              The&lt;title&gt; tag sets the text that appears in the browser
+              tab, in bookmark lists, and in search engine results. It's a
+              critical piece of metadata for both usability and SEO.
+            </li>
+          </ul>
+        </li>
+        <li>
+          &lt;body&gt;... &lt;/body&gt;:
+          <ul>
+            <li>
+              The actual text of the document is written within &lt;body&gt;and
+              &lt;/body&gt;.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h4>
+        Note: The HTML boilerplate isn't just a random collection of tags. Each
+        line serves a critical, logical purpose to ensure your webpage is
+        rendered correctly, is accessible, is mobile-friendly, and is understood
+        by search engines. It is the non-negotiable starting point for every web
+        page you will ever create.
+      </h4>
+
+      <hr />
+      <h2>The &lt;div&gt; tag in HTML</h2>
+      <ul>
+        <li>
+          The &lt;div&gt; tag element is used as a container for other HTML
+          elements.
+        </li>
+        <li>
+          <h3>Why required?</h3>
+          <p>
+            What if we have diferent html elements like, Imagine you have a
+            "user profile card" on a webpage. It consists of an image, a heading
+            for the user's name, and a paragraph for their bio.
+          </p>
+          <p>
+            And you want to add some funtionality in all of them. Then you only
+            have to put all that element in single div which will create Generic
+            Container (meaningless container). And than you can apply
+            functionality (styling).
+          </p>
+        </li>
+      </ul>
+      <h3>Example:</h3>
+      <img src="./images/Div_Tag.png" height="200px" width="700px" alt="div" />
+
+      <hr />
+
+      <h2>class and id (The Labels for the Box)</h2>
+      <ul>
+        <li>
+          <h3>First Principle:</h3>
+          <p>
+            Once we have boxes (&lt;div&gt;s), we need a way to identify and
+            find them.
+          </p>
+        </li>
+        <li>
+          <h3>Why required?</h3>
+          <ul>
+            <li>
+              <h4>Problem:</h4>
+              <p>
+                Your webpage might have ten different profile cards, a sidebar,
+                a main content area, and a photo gallery—all made of
+                &lt;div&gt;s. How do you tell the browser (specifically, your
+                CSS or JavaScript) which box you want to style? How do you say,
+                "Make all the profile cards have a gray background, but make the
+                one featured profile card have a gold border?" You need a
+                targeting system.
+              </p>
+            </li>
+            <li>
+              <h4>Solution:The Logical Solution: Two Types of Labels</h4>
+              <ol>
+                <li>
+                  A Unique Identifier: We need a label for one, and only one,
+                  specific element on the entire page. It must be unique. This
+                  is perfect for major, one-of-a-kind layout sections like the
+                  main navigation bar or a search form. This is the
+                  <strong>id.</strong>
+                </li>
+                <h5>Example:</h5>
+                <img
+                  src="./images/id_tag.png"
+                  height="250px"
+                  width="700px"
+                  alt="id"
+                />
+                <li>
+                  A Reusable Classifier: We also need a label that we can apply
+                  to multiple elements to group them into a category. This is
+                  for things that have a similar style or function, like all the
+                  profile cards, all the error messages, or all the "buy now"
+                  buttons. This is the <strong>class.</strong>
+                </li>
+                <h5>Example:</h5>
+                <img
+                  src="./images/Class_Tag.png"
+                  height="250px"
+                  width="700px"
+                  alt="class"
+                />
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <hr />
+      <h3>Summary:</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Topic</th>
+            <th>Use/ Function/ Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Div (&lt;div&gt;)</td>
+            <td>
+              The (&lt;div&gt;) element is used as a Generic (meaningless)
+              container for other HTML elements.
+            </td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>
+              Use to give unique name to the elements(Because there can be
+              multiple div container).
+            </td>
+          </tr>
+          <tr>
+            <td>class</td>
+            <td>
+              Use to give same name to the multiple elements(Because there can
+              be multiple div container).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <h2>Youtube Tutorial:</h2>
+      <iframe
+        src="https://www.youtube.com/embed/k78lNSAB8VY"
+        allowfullscreen
+      ></iframe>
+      <hr />
+      <hr />
+    </main>
+
+    <footer>
+      <h2>Follow me on:</h2>
+
+      <a
+        href="https://www.linkedin.com/in/akansha-vishwakarma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+      "
+        target="_blank"
+      >
+        LinkedIn</a
+      >
+      <a
+        href="https://x.com/Akanshav_1?t=DR8k-oXCiMwh68Vl88tuyA&s=09 "
+        target="_blank"
+        >Twitter</a
+      >
+      <a href="https://github.com/Akanshavishwakarma" target="_blank">GitHub</a
+      ><br />
+      <p>Copyright &copy; All rights are reserved</p>
+    </footer>
+  </body>
+</html>
