@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction (Lecture 1)</title>
+  </head>
+  <body>
+    <header>
+      <a href="./HomePage.html" target="_blank">Home</a>
+      <a href="./HTML-intro.html" target="_blank">HTML</a>
+      <a href="./AboutUs.html" target="_blank">About us</a>
+
+      <hr />
+    </header>
+
+    <main>
+      <h1>Introduction</h1>
+
+      <h2>Networks:</h2>
+      <p>
+        A network is a system of two or more interconnected entities, such as
+        computers, servers, or other devices, that communicate and share
+        information and resources.
+      </p>
+      <p>
+        It is a group of interconnected computers or devices to have
+        communication within themselves. A computer network consists of a
+        collection of computers, printers and other equipment that is connected
+        together so that they can communicate with each other.
+      </p>
+
+      <h3>Problem with temporary solution:</h3>
+      <ul>
+        <li>Consider, computer (A) wants to sends data to computer B.</li>
+        <li>
+          It uses pendrive. But there are more computers comes into picture.
+        </li>
+        <li>It uses wires. But again more computer comes.</li>
+      </ul>
+      <h3>Permanent Solution (Switch & Router):</h3>
+      <ul>
+        <li>
+          If we use wires then it will be mess. That is why we use switch.
+        </li>
+        <li>Single switch system called LAN.</li>
+
+        <li>Two or more LAN an be connectced through Routers.</li>
+        <li>
+          Whenever we go out from the network than our device IP address will
+          convert to Router IP address because other network can also have same
+          device IP address.
+        </li>
+
+        <img
+          src="./images/ROUTER.png"
+          height="200px"
+          width="500px"
+          alt="Connection between two LAN with Router"
+        />
+      </ul>
+      <h3>Types of Networks:</h3>
+      <ol>
+        <li>
+          PAN (Personal Area Network): Connects a small number of devices, such
+          as a mouse, keyboard, or headphones, to a single computer or user.
+        </li>
+        <li>
+          LAN (Local Area Network): Links devices within a limited area, like a
+          home, office building, or school.
+        </li>
+
+        <li>
+          MAN (Metropolitan Area Network): Spans a city or large campus,
+          connecting several LANs together.
+        </li>
+        <li>
+          WAN (Wide Area Network): Connects devices and networks over large
+          geographical distances, such as continents or even globally, with the
+          internet being the largest example.
+        </li>
+      </ol>
+      <h2>Internet:</h2>
+      <p>
+        The internet is a global system of interconnected computer networks that
+        enables the exchange of information between devices worldwide. It
+        functions as a vast network of networks, allowing for communication,
+        access to information via the World Wide Web, email, and other services.
+        Data travels in small "packets" over various physical infrastructure,
+        including cables and wireless signals, to facilitate communication at
+        the speed of light. It is used to communicate two device or transfer
+        data.
+      </p>
+
+      <p>
+        The Internet is a massive network of networks, a networking
+        infrastructure. With the help of the internet one can easily be in touch
+        with any one in the whole world by sending electronic mail, by chatting.
+        Travel bookings can be made very easily, one can order books or buy
+        anything online. In simple terms it can be said that internet provides a
+        people and their working close to each other
+      </p>
+
+      <img
+        src="./images/Internet1.webp"
+        height="250px"
+        width="500px"
+        alt="Internet Scope"
+      />
+      <ul>
+        <h3>Features:</h3>
+        <li>
+          The Internet has one very simple job: to move computerized information
+          (known as data) from one place to another. The Internet is generally
+          defined as a global network connecting millions of computers.
+        </li>
+        <li>
+          Standardized Protocols: It relies on the Internet protocol suite (like
+          TCP/IP) to ensure different networks and devices can communicate
+          effectively.
+        </li>
+        <li>
+          Packet Switching: Data is broken down into small packets, sent across
+          the network, and reassembled at the destination.
+        </li>
+        <li>
+          Networking Infrastructure: Computers connect to the internet through
+          various technologies like physical wires, fiber-optic cables, and
+          wireless radio waves.
+        </li>
+      </ul>
+      <h3>Example:</h3>
+      <p>
+        Computer A wants to sends data to Computer B and Computer B wants to
+        sends data to Computer A
+      </p>
+      <img
+        src="./images/Internet.png"
+        height="150px"
+        width="700px"
+        alt="Internet explain with example"
+      />
+      <hr />
+      <h2>IP (Internet Protocol)</h2>
+      <p>
+        Definition: An IP address, or Internet Protocol address, is a unique
+        string of numbers assigned to each device connected to a computer
+        network that uses the Internet Protocol for communication. It serves as
+        an identifier that allows devices to send and receive data over the
+        network, ensuring that this data reaches the correct destination.
+      </p>
+      <h3>Structure of the address:</h3>
+      <img
+        src="./images/IP1.png"
+        height="120px"
+        width="400px"
+        alt="Structure of IP address with example"
+      />
+      <p>It is the address of any device. Dynamic in nature.</p>
+      <p>
+        Whenever internet is on, IP address is given to your device. When your
+        internet is off, your device's IP address is taken. And that IP address
+        can be provide to other device too.
+      </p>
+      <h3>Working of web:</h3>
+      <img
+        src="./images/Working of web Example.png"
+        height="250px"
+        width="600px"
+        alt="Working of web with example"
+      />
+      <ul>
+        <li>
+          Computer A types coderArmy.in on the browser. Since it connects with
+          internet. So, it have IP address which is provided by ISP(Internet
+          Service Provider) such as jio, airtel, etc.
+        </li>
+        <li>
+          As we know, we want server IP address but we don't know about coder
+          army server IP address.
+        </li>
+        <li>DNS is the book which is contains list of IP address of all.</li>
+        <li>
+          Before connecting with server computer A connects with DNS & have
+          appropriate IP address. Then, it connects with computer B which sends
+          file (Html, css, js).
+        </li>
+      </ul>
+      <img
+        src="./images/Working of web.png"
+        height="300px"
+        width="700px"
+        alt="Working of web"
+      />
+      <h3>Types of IP Address:</h3>
+      <ol>
+        <h4><li>IPv4</li></h4>
+        <ul>
+          <li>
+            IPv4 (Internet Protocol version 4) is a 32-bit numerical address
+            system that uniquely identifies devices on a network and is
+            fundamental to the functioning of the internet and other
+            packet-switched networks. It uses four sets of numbers, each ranging
+            from 0 to 255, separated by periods (e.g., 192.168.1.1).
+          </li>
+          <br />
+          <li>
+            Problem: The main challenge with IPv4 is the limited number of
+            available addresses, which has been insufficient for the growing
+            number of connected devices.
+          </li>
+          <br />
+          <li>
+            To extend the life of IPv4, NAT technology is used to allow multiple
+            devices on a private network to share a single public IP address,
+            conserving the limited public address space.
+          </li>
+          <br />
+          <li>
+            Solution:To overcome the limitations of IPv4 entirely, IPv6 was
+            developed, offering a vastly larger address space of 128 bits.
+          </li>
+        </ul>
+
+        <br />
+        <h4><li>IPv6</li></h4>
+        <ul>
+          <li>
+            IPv6, or Internet Protocol version 6, is the latest version of the
+            Internet Protocol that provides a vastly larger address space than
+            the older IPv4 to accommodate the growing number of connected
+            devices on the internet
+          </li>
+          <br />
+          <li>
+            Importances:
+            <ol type="i">
+              <li>
+                Addresses IPv4 exhaustion: The primary reason for IPv6's
+                development was to overcome the limited address space of IPv4,
+                which was rapidly running out as more devices connected to the
+                internet.
+              </li>
+              <br />
+              <li>
+                Supports future growth: The large address pool of IPv6 is
+                essential for the future growth of the internet, supporting
+                everything from smartphones to smart home devices and IoT
+                sensors.
+              </li>
+              <br />
+              <li>
+                Improved network functionality: By providing more addresses,
+                IPv6 ensures that every new device can be assigned a unique IP
+                address, facilitating seamless communication and data transfer.
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </ol>
+      <ul>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Features</th>
+              <th>IPv4</th>
+              <th>IPv6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Address Length</th>
+              <td>32 Bits</td>
+              <td>128 Bits</td>
+            </tr>
+
+            <tr>
+              <th>Address Format</th>
+              <td>Decimal format (e.g., 192.168.0.1)</td>
+              <td>Hexadecimal format (e.g., 2001:0db8::1)</td>
+            </tr>
+
+            <tr>
+              <th>Field Structure</th>
+              <td>4 fields separated by dots (.)</td>
+              <td>8 fields separated by colons (:)</td>
+            </tr>
+
+            <tr>
+              <th>Range</th>
+              <td>0 to 255</td>
+              <td>0 to FFFF(65535)</td>
+            </tr>
+
+            <tr>
+              <th>IP address can generate</th>
+              <td>2^32 = 4.3 billion</td>
+              <td>2^128 IP adress</td>
+            </tr>
+
+            <tr>
+              <th>Example</th>
+              <td>66.94.29.13</td>
+              <td>2001:0000:3238:DFE1:0063:0000:0000:FEFB</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <h3>Public IP Address and Private IP Address</h3>
+      <p>
+        A public IP address is a unique global address, assigned by an ISP, that
+        identifies your entire network to the internet, enabling communication
+        with external services. In contrast, a private IP address is assigned by
+        your router to individual devices (like a phone or laptop) within your
+        local network and is only visible and used internally for communication
+        between devices on that network. Your router acts as a gateway, using
+        its public IP to connect to the internet while assigning private IPs to
+        your local devices.
+      </p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Features</th>
+            <th>Public IP Address</th>
+            <th>Private IP Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Scope</th>
+            <td>Global, identifying your network on the internet.</td>
+            <td>Local to your home or office network (LAN).</td>
+          </tr>
+
+          <tr>
+            <th>Uniqueness</th>
+            <td>
+              A one-of-a-kind address for your entire home or office network on
+              the internet.
+            </td>
+            <td>
+              Reusable and not unique outside the private network; many devices
+              on different networks can share the same private IP addresses.
+            </td>
+          </tr>
+
+          <tr>
+            <th>Assignment</th>
+            <td>
+              Assigned by your Internet Service Provider (ISP) to your router.
+            </td>
+            <td>
+              Assigned by your router to devices within your local network.
+            </td>
+          </tr>
+
+          <tr>
+            <th>Purpose</th>
+            <td>
+              Allows devices on your network to access websites, send emails,
+              and communicate with other devices on the internet.
+            </td>
+            <td>
+              Enables devices within your local network to communicate and
+              interact with each other, even without an internet connection.
+            </td>
+          </tr>
+
+          <tr>
+            <th>How to find out</th>
+            <td>Search "What is my IP address?" on a search engine.</td>
+            <td>
+              Use a command prompt (Windows) or terminal (Mac/Linux) and type
+              ipconfig or ifconfig.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Why is Public IP Address and Private IP Address came?</h3>
+      <p>
+        Because IPv4 only have 4.3 Billion IP. So, it is suggested to have
+        private & public IP which leads to the large number of IP.
+      </p>
+
+      <h2>DNS (Domain Name System) Server</h2>
+      <p>
+        DNS, or the Domain Name System, works by translating human-friendly
+        domain names (like www.example.com) into machine-friendly IP addresses
+        (like 192.0.2.1) that computers use to locate websites and other
+        resources on the internet
+      </p>
+
+      <p>
+        Human are more fimiliar with the name of the webiste i.e domain name.
+        Human can learn domain name easily. But to access the website we
+        required IP address.
+      </p>
+      <p>
+        DNS acts as the interface between the client and server. DNS have all
+        website domain name with it's IP address.
+      </p>
+
+      <h3>DNS works:</h3>
+      <img
+        src="./images/dns1.webp"
+        height="250px"
+        width="650px"
+        alt="DNS work"
+      />
+
+      <ol>
+        <li>
+          Client/User sends request to the server with Domain name. For acessing
+          the server Client requires IP address. So, it directs to the DNS
+          resolver.
+        </li>
+        <br />
+        <li>
+          DNS resolver have 3 steps to access the IP.
+          <ul>
+            <li>
+              Root Server: Resolver first contacts the Root DNS Server which is
+              the starting point for DNS lookups. The Root server doesn't know
+              the exact IP address of any website. It's checks for the
+              .extension (.com, .org, .gov, .in, etc.). and send it to the TLD
+            </li>
+            <br />
+            <li>
+              TCD Server: Resolver sends the query to the TLD Server for
+              .extension domains. The TLD server handles domain names ending in
+              .extension and knows where to find the authoritative nameserver
+              for particular website.
+            </li>
+            <br />
+            <li>
+              Authoritative Domain Server: The Resolver then queries the
+              authoritative nameserver for particular website. This server is
+              responsible for storing DNS records for the domain, including the
+              mapping of the domain name to its IP address.
+            </li>
+          </ul>
+        </li>
+        <br />
+        <li>
+          After getting the IP address, now we can access the website (server).
+        </li>
+      </ol>
+      <h3>DNS steps-by-steps Process with example:</h3>
+      <ol>
+        <li>
+          Client/User sends request to the server with Domain name. For acessing
+          the server Client requires IP address. So, it directs to the DNS
+          resolver.
+        </li>
+        <br />
+        <li>
+          DNS Resolver:
+          <ul>
+            <li>
+              Root Server:
+              <ol type="i">
+                <li>Resolver first contacts the Root DNS Server</li>
+                <li>
+                  The Root server doesn't know the exact IP address of
+                  example.com but directs the query to the Top-Level Domain
+                  (TLD) Server responsible for .com.
+                </li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              TLD Server:
+              <ol type="i">
+                <li>
+                  Resolver sends the query to the TLD Server for .com domains
+                </li>
+                <li>
+                  The TLD server handles domain names ending in .com and knows
+                  where to find the authoritative nameserver for example.com.
+                </li>
+              </ol>
+            </li>
+            <br />
+            <li>
+              Authoritative Server:
+              <ol type="i">
+                <li>
+                  The Resolver then queries the authoritative nameserver for
+                  example.com.
+                </li>
+                <li>
+                  This server is responsible for storing DNS records for the
+                  domain, including the mapping of the domain name to its IP
+                  address.
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <img
+        src="./images/dns.png"
+        height="300px"
+        width="700px"
+        alt="DNS process"
+      />
+      <h3>DNS types:</h3>
+      <p>
+        You'll use DNS all day everyday, but did you know there are two
+        different forms of DNS query, recursive and iterative. Understanding how
+        these work ensures that you understand how clients will be using your
+        DNS server(s) and what access they might need to external DNS servers
+        and therefore how that would affect things like firewall configuration.
+        So let’s explore the two types:
+      </p>
+      <ol>
+        <li>
+          <strong> Iterative way:</strong> An iterative DNS query is a type of
+          query where the DNS server who recieved your query won’t do the leg
+          work, but will give you a referral to a DNS server that might have the
+          answer; in this case your DNS client would need to do all the leg work
+          needed to get you the answer, which basically means following all the
+          referrals.
+        </li>
+
+        <img
+          src="./images/Iterative_DNS.png"
+          height="300px"
+          width="500px"
+          alt="Iterative_DNS"
+        />
+        <br />
+        <li>
+          <strong> Recursive way:</strong> A recursive DNS query is a type of
+          query where the DNS server who recieved your query will do all the leg
+          work needed to get you the answer (i.e. go off and ask other DNS
+          servers) and then give you the result.
+        </li>
+        <img
+          src="./images/Recursive_DNS.png"
+          height="300px"
+          width="500px"
+          alt="Recursive_DNS"
+        />
+      </ol>
+
+      <h2>Mac (Media Access Control) Address</h2>
+      <h3>Problem:</h3>
+      <ul>
+        <li>
+          Since we know IP address is dynamic in nature. Consider computer A
+          sends request and due to unwanted stituation computer A disconnect
+          with Internet.
+        </li>
+        <li>
+          And server was late to process things (for 5 minutes), after the
+          process server sends to the same IP address which was sent request.
+        </li>
+        <li>
+          But we know computer A is isconnected then that same IP address is
+          givento someone less & that proess from server will be send to someone
+          less.
+        </li>
+      </ul>
+      <h3>Solution (mac address):</h3>
+      <ul>
+        <li>Mac address is permenant to any device (unique address).</li>
+        <li>
+          A MAC (Media Access Control) Address is a unique, permanent serial
+          number burned into every network-capable piece of hardware (your
+          laptop's Wi-Fi card, your phone, your smart TV, the network port on
+          your desktop).
+        </li>
+      </ul>
+      <h3>Structure of the address:</h3>
+      <img
+        src="./images/Mac_Address.png"
+        height="100px"
+        width="500px"
+        alt="Mac_Address"
+      />
+      <h3>Mac Address Format:</h3>
+      <ul>
+        <li>
+          All the ways in which data can be transferred are included in the mac
+          address.
+        </li>
+        <li>We have many Mac address in one device.</li>
+        <li>48 bits, hexadecimal format.</li>
+        <li>
+          Wecan transfer data through bluetooth, pendrive, wifi, etc. means many
+          ways that is nothing but a Mac address.
+        </li>
+      </ul>
+      <h2>Port Number</h2>
+      <ul>
+        <li>
+          It is used to tell where to diplay website (in which tab to be
+          display).
+        </li>
+        <li>It is 16 bits and unsigned.</li>
+      </ul>
+      <img
+        src="./images/port_number_example.png"
+        height="150px"
+        width="500ppx"
+        alt="port_number_example"
+      />
+      <h3>Structure of the address:</h3>
+      <img
+        src="./images/port_number.png"
+        height="100px"
+        width="500px"
+        alt="structure of port_number"
+      />
+      <h3>Types of ports:</h3>
+      <ol>
+        <h4><li>Well-known Port Number</li></h4>
+        <ul>
+          <li>
+            These are the VIPs of the port world. They are reserved for the most
+            common, fundamental, and standardized internet services.
+          </li>
+          <li>Controlled By: Strictly managed by IANA.</li>
+          <li>
+            Privileges: On most operating systems (like Linux and macOS), you
+            need administrator (root or sudo) privileges to run a program that
+            listens on these ports. This is a security measure to prevent rogue
+            applications from impersonating standard services.
+          </li>
+        </ul>
+        <br />
+
+        <h4><li>Registered Ports</li></h4>
+        <ul>
+          <li>
+            These ports are for specific applications or services that are not
+            as universal as the "well-known" ones. Companies and developers can
+            register a port for their software to avoid conflicts with other
+            applications.
+          </li>
+          <li>Controlled By: Less strict. You can request a port from IANA.</li>
+          <li>
+            Privileges: You do not need administrator privileges to use these
+            ports. This is the "user space" for applications.
+          </li>
+        </ul>
+
+        <br />
+        <h4><li>Dynamic / Private / Ephemeral Ports</li></h4>
+        <ul>
+          <li>
+            These ports are not meant for public-facing servers. Their job is
+            completely different.
+          </li>
+          <li>Controlled By: No one. They are for temporary, private use.</li>
+          <li>
+            Purpose: When your web browser (the client) makes a request to a
+            server (e.g., to google.com on port 443), your computer's operating
+            system needs to assign a temporary source port for its side of the
+            conversation. It grabs a random, unused port from this high-numbered
+            range for the duration of that single connection.
+          </li>
+          <li>
+            Key Takeaway: You never configure your server applications to listen
+            on these ports. They are used automatically by the client side of a
+            connection.
+          </li>
+        </ul>
+      </ol>
+      <br />
+      <h2>Youtube Tutorial:</h2>
+      <iframe
+        src="https://www.youtube.com/embed/1pcikNlDB-4"
+        allowfullscreen
+      ></iframe>
+      <hr />
+      <hr />
+    </main>
+    <footer>
+      <h2>Follow me on:</h2>
+
+      <a
+        href="https://www.linkedin.com/in/akansha-vishwakarma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+      "
+        target="_blank"
+      >
+        LinkedIn</a
+      >
+      <a
+        href="https://x.com/Akanshav_1?t=DR8k-oXCiMwh68Vl88tuyA&s=09 "
+        target="_blank"
+        >Twitter</a
+      >
+      <a href="https://github.com/Akanshavishwakarma" target="_blank">GitHub</a
+      ><br />
+      <p>Copyright &copy; All rights are reserved</p>
+    </footer>
+  </body>
+</html>
