@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 255, 11);
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: orange;
+  backdrop-filter: blur(10px);
+}
+.mercury {
+  height: 150px;
+  width: 150px;
+  border-style: dashed;
+  border-color: aliceblue;
+  animation-name: moving;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes moving {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imgmercury {
+  height: 20px;
+  width: 20px;
+  background-color: brown;
+  border-radius: 50%;
+  transform: translateX(20px);
+}
+
+.venus {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-style: dashed;
+  border-color: aliceblue;
+  animation-name: mvenus;
+  animation-duration: 3.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes mvenus {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imgvenus {
+  height: 25px;
+  width: 25px;
+  background-color: brown;
+  border-radius: 50%;
+  transform: translateX(30px);
+}
+
+.earth {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-style: dashed;
+  border-color: aliceblue;
+  animation-name: mearth;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes mearth {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imgearth {
+  height: 30px;
+  width: 30px;
+  background-color: brown;
+  border-radius: 50%;
+  transform: translateX(40px);
+}
+
+.mars {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-style: dashed;
+  border-color: aliceblue;
+  animation-name: mmars;
+  animation-duration: 3.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes mmars {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imgmars {
+  height: 25px;
+  width: 25px;
+  background-color: brown;
+  border-radius: 50%;
+  transform: translateX(70px);
+}
+
+.jupiter {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  border-style: dashed;
+  border-color: aliceblue;
+  animation-name: mjupiter;
+  animation-duration: 3.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes mjupiter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imgjupiter {
+  height: 30px;
+  width: 30px;
+  background-color: brown;
+  border-radius: 50%;
+  transform: translateX(80px);
+}
+
+.saturn {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-style: dashed;
+  border-color: aliceblue;
+  animation-name: msaturn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes msaturn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imgsaturn {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(165, 42, 118);
+  border-radius: 50%;
+  transform: translateX(100px);
+}
+
+.uranus {
+  position: absolute;
+  height: 460px;
+  width: 460px;
+  border-style: dashed;
+  border-color: aliceblue;
+  animation-name: muranus;
+  animation-duration: 3.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes muranus {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imguranus {
+  height: 30px;
+  width: 30x;
+  background-color: brown;
+  border-radius: 50%;
+  transform: translateX(120px);
+}
+
+.neptune {
+  position: absolute;
+  height: 525px;
+  width: 525px;
+  border-style: dashed;
+  border-color: aliceblue;
+  animation-name: muneptune;
+  animation-duration: 3.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+@keyframes muneptune {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imgneptune {
+  height: 31px;
+  width: 31px;
+  background-color: brown;
+  border-radius: 50%;
+  transform: translateX(150px);
+}
