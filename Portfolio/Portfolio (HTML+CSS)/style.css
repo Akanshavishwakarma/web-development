@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* moves element slightly down */
+  animation: fadeInUp 1.5s forwards; /* duration and forwards keeps final state */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detail h2 {
+  animation-name: fadeInUp;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+}
+
+/* Header H3 Logo fades in first */
+.Logo {
+  animation-delay: 0.5s;
+  animation-name: fadeInUp;
+}
+
+/* Header image or about section image */
+#about .image img {
+  animation-name: fadeInUp;
+  animation-delay: 1.5s; /* appears after logo */
+  animation-duration: 2s;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+  position: sticky;
+  top: 0px;
+  background-color: #2d2d2d;
+  height: 3rem;
+  z-index: 10;
+}
+
+.Logo {
+  color: rgb(249, 174, 62);
+  margin-left: 10px;
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.navigation nav {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation a {
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: all;
+  transition-duration: 1s;
+}
+
+nav a:hover {
+  color: #ffbf00;
+}
+.navigation nav a.active {
+  color: #ffbf00;
+}
+
+/*main container*/
+
+.main-container {
+  background-color: rgb(0, 0, 0);
+}
+
+#about {
+  margin: 70px auto 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.detail:hover {
+  background-color: rgb(249, 174, 62);
+  color: black;
+}
+
+.detail:hover #title {
+  color: black;
+  font-weight: 600;
+}
+
+.detail {
+  background-color: #453e3e;
+  border: 2px solid rgb(48, 48, 48);
+  border-radius: 5%;
+  height: 350px;
+  width: 450px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.detail h2 {
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-family: Georgia, serif;
+}
+
+.detail #title {
+  color: #ffbf00;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 20px;
+  transition-duration: 0.8s;
+}
+
+.detail p {
+  margin: auto 15px 15px 15px;
+  font-family: serif;
+  text-align: justify; /*ek line mein aaye, end mein space naa chhode*/
+}
+
+.detail {
+  background-color: #453e3e;
+  border: 2px solid rgb(48, 48, 48);
+  border-radius: 5%;
+  height: 350px;
+  width: 450px;
+
+  /* Fade-in animation */
+  opacity: 0; /* start invisible */
+  animation: fadeIn 1.5s forwards; /* duration 1.5s, keep final state */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* start invisible */
+    transform: translateY(20px); /* slightly move down */
+  }
+  to {
+    opacity: 1; /* fully visible */
+    transform: translateY(0); /* move to original position */
+  }
+}
+
+#about .image img {
+  height: 300px;
+  width: 250px;
+  border-radius: 30%;
+}
+
+/*skills*/
+#skills {
+  margin-bottom: 40px;
+}
+#skills h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+#skills h3 {
+  margin: 10px auto 10px 15px;
+}
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.list-technical-skills,
+.list-soft-skills {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+.box,
+.box1 {
+  flex: 0 0 calc((100% - 3 * 10px) / 4); /* 4 items visible at a time, gap = 10px */
+  margin-right: 10px;
+  height: 100px;
+  border: 1px solid rgb(133, 133, 133);
+  background-color: rgb(56, 55, 55);
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+.box:hover,
+.box1:hover {
+  background-color: rgb(249, 174, 62); /* new background color */
+  color: black; /* new text color */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } /* move by half because of duplicated items */
+}
+
+/*Education*/
+#education {
+  margin-bottom: 40px;
+}
+#education h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.education-list {
+  position: relative;
+}
+
+.education-list1,
+.education-list2,
+.education-list3 {
+  padding-top: 3px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.year {
+  font-size: 15px;
+  color: rgb(205, 207, 207);
+}
+
+.degree {
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+
+.college-name {
+  font-style: italic;
+  font-size: 15px;
+  color: rgb(221, 224, 224);
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid rgb(249, 174, 62);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 5;
+}
+
+.education-list .line {
+  position: absolute;
+  width: 1px;
+  top: 5px;
+  bottom: 0px;
+  left: 12px;
+
+  border: 1px solid rgb(221, 224, 224);
+}
+/*Awards an certificate*/
+#certificate h2 {
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.list-awards-and-certificates {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+}
+
+.list1,
+.list2 {
+  border: 2px solid #2b2929;
+  margin-left: 10px;
+  background-color: #453e3e;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 400px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list1:hover,
+.list2:hover {
+  background-color: rgb(249, 174, 62);
+  color: black;
+}
+.list1 img,
+.list2 img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.list1 h3,
+.list2 h3 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.list1 p,
+.list2 p {
+  padding: 15px;
+  text-align: justify;
+}
+
+.list1:hover,
+.list2:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/**/
+#experience h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+}
+
+.experience-list1 {
+  padding-top: 3px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.duration {
+  font-size: 15px;
+  color: #ffbf00;
+  padding-top: 3px;
+}
+
+.role-company {
+  padding-top: 5px;
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+
+.info {
+  padding-top: 5px;
+
+  font-size: 15px;
+  color: rgb(221, 224, 224);
+}
+span {
+  font-style: italic;
+}
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid rgb(249, 174, 62);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 5;
+}
+
+.experience-list .line {
+  position: absolute;
+  width: 1px;
+  top: 5px;
+  bottom: 0px;
+  left: 12px;
+  border: 1px solid rgb(221, 224, 224);
+}
+
+.experience-list1 p {
+  padding-top: 5px;
+}
+
+.experience-list1 a {
+  text-decoration: none;
+  color: #ffbf00;
+}
+#experience {
+  margin-bottom: 40px;
+}
+/*contact*/
+
+#contact {
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: rgb(39, 40, 40);
+}
+#contact h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgb(249, 174, 62);
+}
+
+#contact a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.tel,
+.email,
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding-bottom: 5px;
+}
+.location {
+  padding-bottom: 10px;
+}
+
+#contact img {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(64%) saturate(1289%)
+    hue-rotate(180deg) brightness(111%) contrast(108%);
+  transition: filter 0.3s ease;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 30px;
+}
+#contact img:hover {
+  filter: brightness(0) saturate(100%) invert(86%) sepia(50%) saturate(3157%)
+    hue-rotate(328deg) brightness(101%) contrast(95%);
+}
+
+#skills,
+#about,
+#education,
+#certificate,
+#contact,
+#experience {
+  scroll-margin-top: 60px; /* height of your header */
+}
