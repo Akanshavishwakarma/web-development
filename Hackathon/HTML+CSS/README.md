@@ -23,6 +23,8 @@ CSS3 — for styling and responsiveness
 
 ![Landing](./demo-strike.png)
 
+Link: [https://strike-akansha-htmlcss.netlify.app/]
+
 ---
 
 ## ✨ Features
