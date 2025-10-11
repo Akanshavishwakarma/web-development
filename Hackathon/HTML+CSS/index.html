@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strike</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/blue 1.jpg" alt="Strike Logo" />
+        <p>Strike</p>
+      </div>
+
+      <!-- hidden checkbox for toggle -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- hamburger icon -->
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- nav menu -->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tutorial">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Home-->
+      <div id="home">
+        <div class="home-first-half">
+          <h1>Master <span>Tech Skills</span> with Strike</h1>
+          <p class="intro">
+            Structured learning paths, hands-on projects, and mentor support —
+            launch your career in tech.
+          </p>
+          <div class="buttons">
+            <a href="#contact"><button class="enroll">Enroll →</button></a>
+            <a href="#tutorial"> <button class="courses">Courses</button></a>
+          </div>
+          <div class="records">
+            <div class="records-1">
+              <img
+                src="https://www.svgrepo.com/show/520490/student.svg"
+                alt="icon-number"
+              />
+              <div class="records-info">
+                <p class="number">202K+</p>
+                <p class="name">Students</p>
+              </div>
+            </div>
+
+            <div class="records-2">
+              <img
+                src="https://www.svgrepo.com/show/335357/course.svg"
+                alt="icon-courses"
+              />
+              <div class="records-info">
+                <p class="number">4+</p>
+                <p class="name">Courses</p>
+              </div>
+            </div>
+
+            <div class="records-3">
+              <img
+                src="https://www.svgrepo.com/show/215797/teacher.svg"
+                alt="icon-instrutor"
+              />
+              <div class="records-info">
+                <p class="number">2+</p>
+                <p class="name">Experienced Instructors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--home-second-half-->
+        <div class="home-second-half">
+          <p class="title">Why to choose Strike?</p>
+          <p class="intro">Everything you need to succeed in tech.</p>
+          <div class="grid-strike">
+            <div class="grid-strike-1">
+              <img
+                src="https://www.svgrepo.com/show/484077/person-team.svg"
+                alt=""
+              />
+              <div class="grid-strike-1Info">
+                <h3>Expert Mentor Support</h3>
+                <p>
+                  Get guidance from industry professionals with years of
+                  experience in tech and AI.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid-strike-2">
+              <img
+                src="https://www.svgrepo.com/show/487929/trophy.svg"
+                alt=""
+              />
+              <div class="grid-strike-2Info">
+                <h3>Career-Focused Learning</h3>
+                <p>
+                  Prepare for top tech interviews with mock sessions and
+                  portfolio-ready projects.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid-strike-3">
+              <img src="https://www.svgrepo.com/show/521533/brain.svg" alt="" />
+              <div class="grid-strike-3Info">
+                <h3>Hands-on Projects</h3>
+                <p>
+                  Build real-world applications that showcase your skills to
+                  potential employers.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid-strike-4">
+              <img
+                src="https://www.svgrepo.com/show/524417/check-square.svg"
+                alt=""
+              />
+              <div class="grid-strike-4Info">
+                <h3>Structured Curriculum</h3>
+                <p>
+                  Follow a carefully crafted learning path designed to take you
+                  from beginner to job-ready.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Tutorial-->
+      <div id="tutorial">
+        <p class="title">What will you Get?</p>
+        <p class="intro">
+          Discover our comprehensive learning programs designed by industry
+          experts to advance your career and technical skills.
+        </p>
+        <div class="marquee-body">
+          <div class="container">
+            <p class="marquee-dis">
+              % Discount alert: Enroll in now to get Diwali offer !
+            </p>
+          </div>
+        </div>
+        <div class="grid-tutorial">
+          <a href="./courses/genAi.html">
+            <div class="grid-tutorial-1">
+              <img src="./images/paid-genAi.png" alt="" />
+              <div class="grid-tutorial-1Info">
+                <p class="heading">Generative AI</p>
+                <p class="information">
+                  Create AI-powered applications. Work with LLMs, embeddings,
+                  and cutting-edge AI tools.
+                </p>
+                <div class="grid-price">
+                  <p class="curr-price">&#8377;1499</p>
+                  <div class="group">
+                    <p class="discount">50% off</p>
+                    <p class="MRP">&#8377;2999</p>
+                  </div>
+                </div>
+              </div>
+            </div></a
+          >
+          <a href="./courses/DSA.html">
+            <div class="grid-tutorial-2">
+              <img src="./images/paid-DSA.png" alt="" />
+              <div class="grid-tutorial-2Info">
+                <p class="heading">Data Structures & Algorithms</p>
+                <p class="information">
+                  Master DSA from basics to advanced. Perfect for cracking
+                  coding interviews at top tech companies.
+                </p>
+                <div class="grid-price">
+                  <p class="curr-price">&#8377;2999</p>
+                  <div class="group">
+                    <p class="discount">40% off</p>
+                    <p class="MRP">&#8377;4999</p>
+                  </div>
+                </div>
+              </div>
+            </div></a
+          >
+
+          <a href="./courses/HLD.html">
+            <div class="grid-tutorial-3">
+              <img src="./images/paid-HLD.png" alt="" />
+              <div class="grid-tutorial-3Info">
+                <p class="heading">High Level Design</p>
+                <p class="information">
+                  It provide comprehensive knowledge for designing large-scale
+                  systems, focusing on architectural patterns and concepts.
+                </p>
+                <div class="grid-price">
+                  <p class="curr-price-free">Free</p>
+                  <p class="discount"></p>
+                  <p class="MRP"></p>
+                </div>
+              </div></div
+          ></a>
+
+          <a href="./courses/Paid-WebDev.html">
+            <div class="grid-tutorial-4">
+              <img src="./images/paid-webDev.png" alt="" />
+              <div class="grid-tutorial-4Info">
+                <p class="heading">Web Development</p>
+                <p class="information">
+                  Build modern full-stack applications. Learn React, Node.js,
+                  databases, and deployment.
+                </p>
+                <div class="grid-price">
+                  <p class="curr-price">&#8377;2499</p>
+                  <div class="group">
+                    <p class="discount">50% off</p>
+                    <p class="MRP">&#8377;4999</p>
+                  </div>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="view-more">
+          <a href="./course.html"
+            ><button type="submit" class="view-more-button">
+              View More
+            </button></a
+          >
+        </div>
+      </div>
+
+      <!--About-->
+      <div id="about">
+        <h2>Meet our Instructors</h2>
+        <div class="grid-Instructor">
+          <div class="Instructor-1">
+            <div class="Instructors-Info">
+              <img src="./images/aditya-tandon.jpeg" alt="" class="sirimg" />
+              <div class="Instructor-1-title">
+                <h3>Aditya Tandon</h3>
+                <p class="position">Co-Founder & Senior Instructor</p>
+                <p class="post">Ex-Ola | Currently @Oxyzo</p>
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/adityatandon2/"
+                    target="_blank"
+                    ><img
+                      src="https://www.svgrepo.com/show/144030/linkedin-square-logo.svg"
+                      class="image" /></a
+                  ><br />
+                  <a href="https://x.com/adityatandon02" target="_blank"
+                    ><img
+                      src="https://simpleicons.org/icons/x.svg"
+                      class="image"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="specality">IIT Guwahati</button>
+              <button class="specality">Ex-ola</button>
+              <button class="specality">
+                scalablesystems & Algorithms Expert
+              </button>
+            </div>
+            <p class="paragraph">
+              Senior Software Engineer passionate about scalable systems and
+              elegant algorithms. Dedicated mentor committed to teaching,
+              learning, and inspiring future developers
+            </p>
+          </div>
+
+          <div class="Instructor-2">
+            <div class="Instructors-Info">
+              <img src="./images/rohit-negi.jpeg" alt="" class="sirimg" />
+              <div class="Instructor-2-title">
+                <h3>Rohit Negi</h3>
+                <p class="position">Founder & Lead Instructor</p>
+                <p class="post">Ex-@Uber</p>
+
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/rohit-negi9/"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://www.svgrepo.com/show/144030/linkedin-square-logo.svg"
+                      alt=""
+                      class="image"
+                    />
+                  </a>
+                  <a href="https://x.com/rohit_negi9" target="_blank"
+                    ><img
+                      src="https://simpleicons.org/icons/x.svg"
+                      class="image"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="specality">IIT Graduate</button>
+              <button class="specality">2Cr+ Package</button>
+              <button class="specality">Industry Expert</button>
+            </div>
+            <p class="paragraph">
+              Heartfelt Problem Solver, Instrutor, & Visionary Leader. Got
+              Highest Placement in India of 2Cr+. Post Graduate from IIT G,
+              GATE-CSE'20 AIR-202
+            </p>
+          </div>
+        </div>
+
+        <!--Student Feedback-->
+        <div class="Students-success-stories">
+          <h2 class="title">Student Success Stories</h2>
+          <p class="intro">Join thousands who've transformed their careers</p>
+          <div class="student-list">
+            <div class="student-list-1">
+              <p class="name">Priya Mariya</p>
+              <p class="role">Data Scientist</p>
+              <div class="ratings">
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <p class="duration">3 days ago</p>
+              </div>
+
+              <p class="messages">
+                “Mentor sessions and mock interviews gave me the confidence I
+                needed. Couldn't recommend more."
+              </p>
+            </div>
+
+            <div class="student-list-2">
+              <p class="name">Rahul Sharma</p>
+              <p class="role">AI Engineer at Microsoft</p>
+              <div class="ratings">
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <p class="duration">3 weeks ago</p>
+              </div>
+              <p class="messages">
+                "The GenAI projects are incredibly practical. I built a
+                production-ready chatbot that impressed my interviewers."
+              </p>
+            </div>
+
+            <div class="student-list-3">
+              <p class="name">Emily Rodriguez</p>
+              <p class="role">Full Stack Developer</p>
+              <div class="ratings">
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/302554/star.svg"
+                  alt=""
+                />
+                <img
+                  src="https://www.svgrepo.com/show/533052/star.svg"
+                  alt=""
+                />
+                <p class="duration">1 weeks ago</p>
+              </div>
+
+              <p class="messages">
+                "From zero to hero in 6 months. The mentors are patient,
+                knowledgeable, and genuinely care about your success."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Contact-->
+      <div id="contact">
+        <h1>Let's get in touch</h1>
+        <div class="grid-contact">
+          <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <form>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+              /><br /><br />
+
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+              /><br /><br />
+
+              <label for="message">Message: </label><br />
+
+              <textarea
+                placeholder="Tell us about your goals and how we can help you..."
+                rows="10px"
+                cols="40px"
+              ></textarea>
+
+              <button type="submit" class="submit">Submit</button>
+            </form>
+          </div>
+          <div class="contact-details">
+            <h2>Contact Info</h2>
+            <div class="email">
+              <img src="https://www.svgrepo.com/show/501173/email.svg" alt="" />
+              <h3 class="label">Email:</h3>
+              <a href="mailto:coderarmy@gmail.com" class="value"
+                >codearmy@gmail.com</a
+              >
+            </div>
+            <div class="location">
+              <img
+                src="https://www.svgrepo.com/show/522167/location.svg"
+                alt=""
+              />
+              <h3 class="label">Location:</h3>
+              <p class="value">Mumbai, Maharashtra.</p>
+            </div>
+            <div class="office-hours">
+              <img src="https://www.svgrepo.com/show/514265/time.svg" alt="" />
+              <h3 class="label">Office Hours:</h3>
+
+              <ul>
+                <li>Monday - Friday: 9:00 AM - 6:00 PM PST</li>
+                <li>Saturday: 10:00 AM - 4:00 PM PST</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+            <div class="response-time">
+              <img
+                src="https://www.svgrepo.com/show/488421/time-sand.svg"
+                alt=""
+              />
+              <h3 class="label">Response Time:</h3>
+              <p>
+                We typically respond within 24 hours during business days. For
+                urgent inquiries, please call us directly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <hr />
+    <div class="footer">
+      <div class="footer-group">
+        <div class="aim">
+          <p class="logos">Strike</p>
+          <p class="para">
+            Master DSA & GenAI with expert-led courses and hands-on projects.
+          </p>
+        </div>
+
+        <div class="Quick-links">
+          <div class="one-line">
+            <p class="titles">Quick Links</p>
+            <img src="https://www.svgrepo.com/show/347104/links.svg" alt="" />
+          </div>
+          <a href="#home" class="para" id="a-footer">Home</a>
+          <a href="#tutorial" class="para" id="a-footer">Tutorial</a>
+          <a href="#about" class="para" id="a-footer">About</a>
+          <a href="#contact" class="para" id="a-footer">Contact</a>
+        </div>
+
+        <div class="Courses">
+          <a href="#tutorial" class="titles">Courses</a
+          ><img
+            src="https://www.svgrepo.com/show/535223/book-open.svg"
+            style="padding-left: 2px"
+            alt=""
+          /><br />
+          <p class="para">Generative Ai</p>
+          <p class="para">DSA</p>
+          <p class="para">Web development</p>
+          <p class="para">HLD</p>
+        </div>
+
+        <div class="stay-connected">
+          <p class="titles">Stay Connected</p>
+          <a
+            href="https://www.linkedin.com/company/coderarmy/posts/?feedView=all"
+            target="_blank"
+          >
+            <img
+              src="https://www.svgrepo.com/show/144030/linkedin-square-logo.svg"
+              alt=""
+            />
+          </a>
+          <a href="https://www.youtube.com/@CoderArmy9" target="_blank"
+            ><img src="https://www.svgrepo.com/show/369662/youtube.svg" alt=""
+          /></a>
+
+          <a
+            href="https://www.instagram.com/coder_army9/?igsh=bzZ5aXoyMjYzMXBo#"
+            target="_blank"
+          >
+            <img src="https://www.svgrepo.com/show/510026/instagram.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright&copy; 2025 by Strike | All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
